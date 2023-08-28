@@ -21,7 +21,7 @@ public class PaymentResource {
 	public ResponseEntity<Payment> getPayment(@PathVariable Long workerId, @PathVariable Integer days) {
 		Payment payment = service.getPayment(workerId, days);
 		return ResponseEntity.ok(payment);
-	}	
+	}
 }
 
 
